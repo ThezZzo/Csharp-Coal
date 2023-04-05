@@ -1,0 +1,22 @@
+﻿@page
+@model System.Collections.Generic.IEnumerable<Csharp_Coal.App.Models.CategorySize>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    @foreach (var coal in Model)
+    {
+        <h2>@coal.Category.Name</h2> 
+        <h2>@coal.SizeCoal.Name</h2>
+
+    }
+</body>
+</html>
